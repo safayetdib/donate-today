@@ -56,6 +56,7 @@ main .description {
 	padding: 1rem 1.8rem;
 	border: none;
 	border-radius: 5px;
+	cursor: pointer;
 }
 .btn-primary:hover {
 	background-color: #ff3a3a;
@@ -218,6 +219,7 @@ main section {
 	border-right: 5px;
 	border-top-right-radius: 5px;
 	border-bottom-right-radius: 5px;
+	cursor: pointer;
 }
 .subscribe input[type='submit']:hover {
 	background-color: #ff3a3a;
