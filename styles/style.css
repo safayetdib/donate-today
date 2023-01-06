@@ -1,0 +1,242 @@
+:root {
+	--primary-color: #ff5959;
+	--secondary-color: #fafafa;
+	--color-one: #edf5f6;
+	--color-two: #ffeeee;
+	--color-three: #fff4d6;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+body {
+	background-color: #1b1b1b;
+	color: #fff;
+	padding: 0 5px;
+}
+
+/* header section */
+.banner {
+	height: 100vh;
+	text-align: center;
+	background-color: #1b1b1b9e;
+	background-image: url(../assets/images/donation12.png);
+	background-repeat: no-repeat;
+	background-blend-mode: multiply;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 2rem;
+}
+
+.headline {
+	font-size: 3rem;
+	max-width: 45rem;
+}
+
+.description {
+	font-size: 1.2rem;
+	max-width: 35rem;
+	text-align: center;
+}
+main .description {
+	color: gray;
+}
+
+.btn-primary {
+	font-size: 1.6rem;
+	font-weight: 600;
+	background-color: var(--primary-color);
+	color: #fff;
+	padding: 1rem 1.8rem;
+	border: none;
+	border-radius: 5px;
+}
+.btn-primary:hover {
+	background-color: #ff3a3a;
+}
+
+/* main section */
+main {
+	padding: 0 10rem;
+	width: 100%;
+	background-color: #fff;
+	color: #1b1b1b;
+}
+main section {
+	height: 100vh;
+	padding: 2rem 0;
+}
+.section-title {
+	font-size: 2.4rem;
+	color: #1b1b1b;
+}
+
+/* donate today section */
+.donate-today {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 2rem;
+	padding: 8rem 2rem;
+}
+
+.donation-amount {
+	color: gray;
+	display: flex;
+	gap: 1rem;
+}
+.donation-amount li {
+	list-style: none;
+	background-color: var(--color-one);
+	border: 2px solid var(--color-one);
+	border-radius: 5px;
+	padding: 1.5rem 2.5rem;
+	font-size: 2rem;
+	font-weight: 600;
+}
+.donation-amount li:hover {
+	border: 2px solid var(--primary-color);
+	color: var(--primary-color);
+}
+
+.other-amount {
+	width: 60rem;
+	text-align: center;
+	font-size: 1.2rem;
+	line-height: 3rem;
+	color: gray;
+	border: none;
+	border-bottom: 2px solid lightgray;
+}
+
+/* donation plan section */
+.donation-plan {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 2rem;
+}
+.plan-cards {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+}
+.card {
+	padding: 3rem 2rem;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 2rem;
+	border-radius: 8px;
+}
+.card:nth-child(1) {
+	background-color: var(--color-one);
+}
+.card:nth-child(2) {
+	background-color: var(--color-two);
+}
+.card:nth-child(3) {
+	background-color: var(--color-three);
+}
+.card-title {
+	font-size: 1.6rem;
+	font-weight: 600;
+}
+.card .description {
+	text-align: left;
+}
+
+/* how to contribute section */
+.how-to-contribute {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 5rem;
+	height: 80%;
+	background-color: var(--color-one);
+	padding: 2rem;
+	margin-bottom: 5rem;
+	border-radius: 8px;
+}
+.contribute-desc {
+	width: 50%;
+}
+.contribute-desc .description {
+	text-align: left;
+	margin: 2rem 0;
+}
+.contribute-img img {
+	border-radius: 8px;
+	width: 35rem;
+	height: 22rem;
+}
+
+/* get update section */
+.get-updates {
+	height: 95%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 2rem;
+}
+.subscription {
+	padding: 6rem 12rem;
+	background-color: var(--color-three);
+}
+.subscribe {
+	display: flex;
+	border-radius: 8px;
+}
+.subscribe input[type='email'],
+.subscribe input[type='submit'] {
+	border: none;
+	padding: 1.2rem 2rem;
+	margin: 0;
+	font-size: 1.2rem;
+}
+.subscribe input[type='email'] {
+	background-color: lightgrey;
+	color: gray;
+	width: 25rem;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+.subscribe input[type='submit'] {
+	background-color: var(--primary-color);
+	color: #fff;
+	border-right: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+.subscribe input[type='submit']:hover {
+	background-color: #ff3a3a;
+}
+
+/* footer section  */
+footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 1.4rem;
+	padding: 3rem;
+}
+footer .section-title {
+	color: goldenrod;
+	font-family: 'Dancing Script', cursive;
+}
+footer .description {
+	color: var(--secondary-color);
+	font-family: 'Dancing Script', cursive;
+}
